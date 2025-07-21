@@ -1,0 +1,1 @@
+python main_arl.py --ckpt_path ./results/vggsoud/arl_gamma_1.0 --modality full --dataset  VGGSound --gpu_ids 1 --modulation Normal --alpha 0.8 --train --num_frame 3 --pe 0  --beta 1e-5 --drop 0 --gamma 1.0 --T 4.0

@@ -1,0 +1,1 @@
+python main.py --ckpt_path ./results/ave/audio_normal --alpha 0.1 --train --modality audio --modulation Normal --gpu_ids 0 --dataset AVE
