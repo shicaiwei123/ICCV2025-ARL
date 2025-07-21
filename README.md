@@ -1,6 +1,6 @@
 # ICCV2025-ARL
 
-Here is the official code for "Boosting Multimodal Learning via Disentangled Gradient Learning", which is a flexible framework to enhance the optimization process of multimodal learning. Please refer to our [ICCV 2025 paper](https://arxiv.org/pdf/2507.10203) for more details.
+Here is the official code for "Improving Multimodal Learning via Imbalanced Learning", which is a flexible framework to enhance the optimization process of multimodal learning. Please refer to our [ICCV 2025 paper](https://arxiv.org/pdf/2507.10203) for more details.
 
 
 ## Main Dependencies
