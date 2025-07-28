@@ -15,7 +15,7 @@ Here is the official code for "Improving Multimodal Learning via Imbalanced Lear
 ## Usage
 ### Data Preparation
 Download Dataset：
-[CREMA-D](https://pan.baidu.com/s/11ISqU53QK7MY3E8P2qXEyw?pwd=4isj), [Kinetics-Sounds](https://pan.baidu.com/s/1E9E7h1s5NfPYFXLa1INUJQ?pwd=rcts).
+[CREMA-D](https://pan.baidu.com/s/11ISqU53QK7MY3E8P2qXEyw?pwd=4isj), [Kinetics-Sounds](https://pan.baidu.com/s/1E9E7h1s5NfPYFXLa1INUJQ?pwd=rcts)，[AVE](https://pan.baidu.com/s/1xRlJHzhI1Upc01UJGGccsQ?pwd=62wh).
 Here we provide the processed dataset directly. 
 
 The original dataset can be seen in the following links,
