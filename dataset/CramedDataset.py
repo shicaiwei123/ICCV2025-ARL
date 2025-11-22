@@ -88,12 +88,28 @@ class CramedDataset(Dataset):
             ])
 
         # Visual
+        # origin
+        # image_samples = os.listdir(self.image[idx])
+        # images = torch.zeros((self.args.fps, 3, 224, 224))
+        # for i in range(self.args.fps):
+        #     img = Image.open(os.path.join(self.image[idx], image_samples[i])).convert('RGB')
+        #     bt = time.time()
+        #     img = transform(img)
+        #     et = time.time()
+        #     # print(et-bt)
+        #     images[i] = img
+
+        # revise
         image_samples = os.listdir(self.image[idx])
-        select_index = np.random.choice(len(image_samples), size=self.args.fps, replace=False)
+        image_samples.sort()
+        if len(image_samples)>1:
+            select_index = np.random.choice(np.arange(1, len(image_samples)), size=self.args.fps, replace=False)
+        else:
+            select_index=[0]
         select_index.sort()
         images = torch.zeros((self.args.fps, 3, 224, 224))
         for i in range(self.args.fps):
-            img = Image.open(os.path.join(self.image[idx], image_samples[i])).convert('RGB')
+            img = Image.open(os.path.join(self.image[idx], image_samples[select_index[i]])).convert('RGB')
             bt = time.time()
             img = transform(img)
             et = time.time()
