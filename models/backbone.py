@@ -79,7 +79,8 @@ class GradScale(torch.autograd.Function):
     def backward(ctx, grad_output):
         # 在反向传播中修改计算图，这里只是一个示例，可以根据需求修改计算图
         weight = ctx.saved_tensors
-
+        if isinstance(weight,tuple):
+            weight=weight[0]
         grad_input = grad_output+grad_output * weight
 
         grad_weight = torch.tensor(1.0)
