@@ -259,7 +259,6 @@ def main():
     if args.backbone == 'resnet':
         model = AVClassifier_AUXI_Weight(args)
         model.apply(weight_init)
-        raise EOFError
 
     model.to(device)
 
