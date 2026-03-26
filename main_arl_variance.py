@@ -157,7 +157,8 @@ def train_epoch(args, epoch, model, device, dataloader, optimizer, scheduler, ac
                       weight.detach().cpu().numpy(), weight_2.detach().cpu().numpy())
 
             loss_cls = loss_f + (loss_a + loss_v) * args.gamma
-
+            model.module.args.audio_weight = a_weight
+            model.module.args.visual_weight = v_weight
         else:
             loss_cls = loss_f + (loss_a + loss_v) * 1
             model.module.args.audio_weight = 0.5
